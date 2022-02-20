@@ -31,10 +31,16 @@ body {
 }
 
 .circle {
-  background-color: #ff7979;
+  background-color: #01e947;
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
 }
 
 .circle button {
